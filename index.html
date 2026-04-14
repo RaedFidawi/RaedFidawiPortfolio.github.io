@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raed Fidawi</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      padding: 5rem 0 3.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .hero-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(48px, 9vw, 80px);
+      font-weight: 400;
+      line-height: 1.0;
+      letter-spacing: -1.5px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-summary {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--muted);
+      max-width: 560px;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .contact-row a {
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      transition: color 0.15s;
+    }
+    .contact-row a:hover { color: var(--text); }
+    .contact-row a::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--faint);
+      flex-shrink: 0;
+    }
+
+    /* Quick nav cards */
+    .quick-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .quick-card {
+      background: var(--bg);
+      padding: 1.5rem;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: background 0.15s;
+    }
+    .quick-card:hover { background: var(--surface); }
+
+    .quick-card-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+
+    .quick-card-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .quick-card-arrow {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--faint);
+      margin-top: auto;
+      padding-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Raed Fidawi</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="pages/experience.html">Experience</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/education.html">Education</a></li>
+        <li><a href="pages/skills.html">Skills</a></li>
+        <li><a href="pages/publications.html">Publications</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="hero">
+      <p class="hero-label fade-in">MSc Computer Science · American University of Beirut</p>
+      <h1 class="fade-in">Raed<br>Fidawi</h1>
+      <p class="hero-summary fade-in">
+        Software engineer and ML researcher with a strong foundation in full-stack development, production backend systems, and end-to-end machine learning pipelines. Currently conducting research in 3D deep learning at AUB — targeting industry research and engineering roles.
+      </p>
+      <div class="contact-row fade-in">
+        <a href="mailto:roudyfidawi@hotmail.com">roudyfidawi@hotmail.com</a>
+        <a href="https://linkedin.com/in/raed-fidawi-a16964274" target="_blank" rel="noopener">linkedin /raed-fidawi</a>
+        <a href="tel:+96176437212">+961 76 437 212</a>
+        <a href="https://github.com/roudyfidawi" target="_blank" rel="noopener">github /roudyfidawi</a>
+      </div>
+    </div>
+
+    <div class="quick-nav fade-in">
+      <a href="pages/experience.html" class="quick-card">
+        <span class="quick-card-label">Work</span>
+        <span class="quick-card-title">Experience</span>
+        <span class="quick-card-arrow">→</span>
+      </a>
+      <a href="pages/projects.html" class="quick-card">
+        <span class="quick-card-label">Code</span>
+        <span class="quick-card-title">Projects</span>
+        <span class="quick-card-arrow">→</span>
+      </a>
+      <a href="pages/education.html" class="quick-card">
+        <span class="quick-card-label">Academic</span>
+        <span class="quick-card-title">Education</span>
+        <span class="quick-card-arrow">→</span>
+      </a>
+      <a href="pages/skills.html" class="quick-card">
+        <span class="quick-card-label">Tools</span>
+        <span class="quick-card-title">Skills</span>
+        <span class="quick-card-arrow">→</span>
+      </a>
+      <a href="pages/publications.html" class="quick-card">
+        <span class="quick-card-label">Research</span>
+        <span class="quick-card-title">Publications</span>
+        <span class="quick-card-arrow">→</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Raed Fidawi · Beirut, Lebanon · roudyfidawi@hotmail.com</p>
+  </footer>
+</body>
+</html>

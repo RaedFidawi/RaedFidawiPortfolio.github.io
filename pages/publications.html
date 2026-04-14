@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications · Raed Fidawi</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .empty-state {
+      padding: 4rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .empty-state p {
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--faint);
+      line-height: 1.75;
+    }
+
+    /* Template for future publications — hidden for now */
+    .pub-entry {
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .pub-entry:last-child { border-bottom: 1px solid var(--border); }
+
+    .pub-title {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .pub-authors {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .pub-venue {
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 300;
+      color: var(--faint);
+      margin-bottom: 0.75rem;
+    }
+
+    .pub-abstract {
+      font-size: 13.5px;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+
+    .pub-links {
+      display: flex;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">Raed Fidawi</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="publications.html" class="active">Publications</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="page-header fade-in">
+      <p class="page-eyebrow">Research</p>
+      <h1 class="page-title">Publications</h1>
+      <p class="page-desc">Peer-reviewed papers and manuscripts from ongoing research.</p>
+    </div>
+
+    <!-- Work in progress notice -->
+    <div class="empty-state fade-in">
+      <p>Publications forthcoming. Current work includes a manuscript on <em>"Pattern Recognition in Arabic Sign Language"</em> and ongoing thesis research in 3D voxel completion with transformers.</p>
+    </div>
+
+    <!--
+      ── TEMPLATE: copy and paste this block when you have a publication to add ──
+
+    <div class="pub-entry">
+      <div class="pub-title">Your Paper Title Here</div>
+      <div class="pub-authors">Raed Fidawi, Co-Author Name, Advisor Name</div>
+      <div class="pub-venue">Conference / Journal Name · Year</div>
+      <p class="pub-abstract">
+        A short abstract or summary of what the paper is about. 2-3 sentences is enough.
+      </p>
+      <div class="pub-links">
+        <a href="PAPER_PDF_LINK" target="_blank" rel="noopener" class="text-link">PDF →</a>
+        <a href="ARXIV_LINK" target="_blank" rel="noopener" class="text-link">arXiv →</a>
+        <a href="GITHUB_LINK" target="_blank" rel="noopener" class="text-link">Code →</a>
+      </div>
+    </div>
+
+    -->
+
+  </main>
+
+  <footer>
+    <p>Raed Fidawi · Beirut, Lebanon · roudyfidawi@hotmail.com</p>
+  </footer>
+</body>
+</html>
