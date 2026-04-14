@@ -6,22 +6,22 @@
   --serif: 'DM Serif Display', Georgia, serif;
   --mono: 'DM Mono', 'Courier New', monospace;
   --sans: 'DM Sans', sans-serif;
-  --bg: #faf9f7;
+  --bg: #faf7f4;
   --surface: #ffffff;
-  --text: #1a1916;
-  --muted: #6b6860;
-  --faint: #b0afa9;
-  --border: #e8e6e1;
+  --text: #3b2a1a;
+  --muted: #7a5c44;
+  --faint: #c4a98a;
+  --border: #e8ddd3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #141412;
-    --surface: #1e1d1b;
-    --text: #f0eeea;
-    --muted: #8a8880;
-    --faint: #4a4946;
-    --border: #2a2926;
+    --bg: #1a1108;
+    --surface: #241a0e;
+    --text: #f2e8dc;
+    --muted: #c4a078;
+    --faint: #6b4e35;
+    --border: #3a2a1a;
   }
 }
 

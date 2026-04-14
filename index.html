@@ -12,6 +12,25 @@
       margin-bottom: 3rem;
     }
 
+    .hero-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-photo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+      margin-top: 0.5rem;
+    }
+
     .hero-label {
       font-family: var(--mono);
       font-size: 10px;
@@ -129,7 +148,10 @@
   <main class="page">
     <div class="hero">
       <p class="hero-label fade-in">MSc Computer Science · American University of Beirut</p>
-      <h1 class="fade-in">Raed<br>Fidawi</h1>
+      <div class="hero-top fade-in">
+        <h1>Raed<br>Fidawi</h1>
+        <img src="images/photo.jpg" alt="Raed Fidawi" class="hero-photo" />
+      </div>
       <p class="hero-summary fade-in">
         Software engineer and ML researcher with a strong foundation in full-stack development, production backend systems, and end-to-end machine learning pipelines. Currently conducting research in 3D deep learning at AUB — targeting industry research and engineering roles.
       </p>
