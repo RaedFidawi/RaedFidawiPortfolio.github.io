@@ -20,15 +20,20 @@
       margin-bottom: 1.5rem;
     }
 
+    .hero-text { flex: 1; }
+
     .hero-photo {
-      width: 130px;
-      height: 130px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
       object-position: center top;
-      border: 1px solid var(--border);
+      border: 3px solid var(--tan);
       flex-shrink: 0;
       margin-top: 0.5rem;
+      background: var(--border);
+      color: transparent;
+      font-size: 0;
     }
 
     .hero-label {
@@ -147,10 +152,12 @@
 
   <main class="page">
     <div class="hero">
-      <p class="hero-label fade-in">MSc Computer Science · American University of Beirut</p>
       <div class="hero-top fade-in">
-        <h1>Raed<br>Fidawi</h1>
-        <img src="images/photo.jpg" alt="Raed Fidawi" class="hero-photo" />
+        <div class="hero-text">
+          <p class="hero-label">MSc Computer Science · American University of Beirut</p>
+          <h1>Raed<br>Fidawi</h1>
+        </div>
+        <img src="images/photo.jpg" alt="Raed Fidawi" class="hero-photo" onerror="this.style.display='none'" />
       </div>
       <p class="hero-summary fade-in">
         Software engineer and ML researcher with a strong foundation in full-stack development, production backend systems, and end-to-end machine learning pipelines. Currently conducting research in 3D deep learning at AUB — targeting industry research and engineering roles.
@@ -159,7 +166,7 @@
         <a href="mailto:roudyfidawi@hotmail.com">roudyfidawi@hotmail.com</a>
         <a href="https://linkedin.com/in/raed-fidawi-a16964274" target="_blank" rel="noopener">linkedin /raed-fidawi</a>
         <a href="tel:+96176437212">+961 76 437 212</a>
-        <a href="https://github.com/roudyfidawi" target="_blank" rel="noopener">github /roudyfidawi</a>
+        <a href="https://github.com/RaedFidawi" target="_blank" rel="noopener">github /RaedFidawi</a>
       </div>
     </div>
 
