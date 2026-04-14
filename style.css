@@ -15,18 +15,6 @@
   --tan: #d97757;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #1e1c1a;
-    --surface: #272320;
-    --text: #F5F0EB;
-    --muted: #a89080;
-    --faint: #5a4a40;
-    --border: #38302a;
-    --tan: #d97757;
-  }
-}
-
 html { scroll-behavior: smooth; }
 
 body {
